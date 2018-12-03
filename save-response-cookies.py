@@ -18,7 +18,7 @@ class savecookie(BasePlugin, DiscoveryPluginMixin):
     name = "save-response-cookies"
     author = ("Roberto Diana",)
     version = "0.1.0"
-    summary = "save the response to file"
+    summary = "save the response cookies to file"
     description = ("Each file is the name of request's number.",)
     category = ["default"]
     priority = 99
