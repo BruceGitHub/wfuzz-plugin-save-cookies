@@ -8,8 +8,10 @@ according to wfuzz documentation place this script at home folder under .wfuzz/s
 call from cli like this 
 
 ```bash
-wfuzz --script=save-response-cookies  -z list,1-2 http://www.host.com/FUZZ
+wfuzz --script=save-response-cookies  -z list,index.php -z list,1-2  -d "fuckhtml=FUZ2Z" docker.hackthebox.eu:46177/FUZZ
 ```
+# Note 
+"WFUZZ" does not start custom script scripts if you do not use the FUZZ keyword in the URL a trick is to use two payloads with FUZ2Z
 
 # Output like this
 
